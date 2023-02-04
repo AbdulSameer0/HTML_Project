@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1> Sorting in java script </h1>
+    <h2>Bubble Sortig</h2>
+
+    <!-- <p id="demo"></p> -->
+    <!-- <div>
+        <a href="index.html"> Home </a>
+        <a href="about_us.html">About US</a>
+    </div> -->
+
+
+    <script>
+
+        function Sorting() {
+            let arr = [3, 4, 2, 1, 4, 5, 6, 7, 4, 8, 3, 9, 2];
+            for (i = 0; i < arr.length - 1; i++) {
+                for (j = 0; j < arr.length - i - 1; j++) {
+                    if (arr[j] < arr[j + 1]) {
+                        let team = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = arr[j];
+                    }
+                }
+                console.log(arr);
+            }
+
+        }
+        Sorting();
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

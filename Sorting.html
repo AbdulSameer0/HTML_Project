@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2> home </h2>
+
+    <p id="demo"></p>
+    <div>
+        <a href="index.html"> Home </a>
+        <a href="about_us.html">About US</a>
+    </div>
+
+
+    <script>
+
+
+
+       function Sorting(){
+        let arr = [44,6,37,2,6,5,7];
+           for(i =0; i<arr.length-1; i++){
+
+
+
+            
+               for(j =0; j<arr.length-i-1; j++){
+                   if(arr[j]>arr[j+1]){
+                       //swap
+                       let team = arr[j];
+                       arr[j]=arr[j+1];
+                       arr[j+1]=team;
+                   }
+               }
+           }
+           console.log(arr);
+       }
+       Sorting();
+
+       function nestedLoop(){
+            for(var i=0; i<10; i++){
+                for(var j = 0; j<10; j++){
+                    console.log("Test");
+                }
+            }
+       }
+
+       //nestedLoop();
+
+
+    </script>
+
+</body>
+
+</html>

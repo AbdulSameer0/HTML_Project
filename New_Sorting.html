@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1> Sorting in java script </h1>
+    <h2>Bubble Sortig</h2>
+
+    <!-- <p id="demo"></p> -->
+    <!-- <div>
+        <a href="index.html"> Home </a>
+        <a href="about_us.html">About US</a>
+    </div> -->
+
+
+    <script>
+
+        function Sortint(){
+                let arr = [2,5,3,2,6,7];
+                for (let i = 0; i< arr.length-1; i++) {
+                    for(let j = 0; j<arr.length-i-1; j++){
+                        if(arr[j]<arr[j+1]){
+                            //swaping
+                            let team = arr[j];
+                            arr[j]=arr[j+1];
+                            arr[j+1]=team;
+                        }
+                    }
+                    console.log(arr);
+                    
+                }
+        }
+
+        Sortint();
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
